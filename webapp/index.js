@@ -2,6 +2,6 @@ sap.ui.define([
 
 ], function (){
     "use strict";
-    
-    alert("UI5 is ready to go!");
+
+    alert("UI5 is ready to go!"); 
 });
