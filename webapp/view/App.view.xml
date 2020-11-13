@@ -3,7 +3,7 @@
    xmlns:mvc="sap.ui.core.mvc"
    controllerName="walkthrough.controller.App">
    <Button
-      text="Hello"
+      text="{i18n>showHelloButtonText}"
       press=".onShowHello"/>
    <Input
       value="{/recipient/name}"
