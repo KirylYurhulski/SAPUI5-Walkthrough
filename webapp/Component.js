@@ -7,12 +7,7 @@ sap.ui.define([
 
 	return UIComponent.extend("walkthrough.Component", {
         metadata : {
-            rootView: {
-               "viewName": "walkthrough.view.App",
-               "type": "XML",
-               "async": true,
-               "id": "app"
-            }
+            manifest: "json"
         },
 
         init: function(){
@@ -25,15 +20,6 @@ sap.ui.define([
             };
             this.setModel(
                 new JSONModel(oData)
-            );
-            // set i18n Model
-            this.setModel(
-                new ResourceModel({
-                    bundleName: "walkthrough.i18n.i18n",
-                    supportedLocales: [""],
-                    fallbackLocale: ""
-                }), 
-                "i18n"
             );
         }
 	});
