@@ -14,13 +14,12 @@ sap.ui.define([
         init: function(){
             UIComponent.prototype.init.apply(this, arguments);
             // set Data Model
-            let oData = {
-                recipient : {
-                    name : "World"
-                 }
-            };
             this.setModel(
-                new JSONModel(oData)
+                new JSONModel({
+                    recipient : {
+                        name : "World"
+                     }
+                })
             );
             // set Dialog
 			this._helloDialog = new HelloDialog(this.getRootControl());
