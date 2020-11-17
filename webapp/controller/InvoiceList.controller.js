@@ -27,6 +27,11 @@ sap.ui.define([
 				aFilter.push(new Filter("ProductName", FilterOperator.Contains, sQuery));
 				oBinding.filter(aFilter);
 			}
+		},
+		
+		onPress: function (oEvent) {
+			var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+			oRouter.navTo("detail");
 		}	
 	});
 });
